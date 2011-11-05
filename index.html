@@ -11,31 +11,52 @@
 	<meta name="description" content="" />
 	<meta name="author" content="" />
 
-	<!-- Mobile viewpoer optimization -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Place your favicon.ico and apple-touch-icon.png in the site root folder instead of referencing them here -->
 
 	<!-- Your main stylesheet for all media. Remove version number for production mode -->
 	<link rel="stylesheet" href="css/style.css?v=2" />
 
-	<!-- TO USE LESS WITHOUT A COMPILER, UNCOMMENT THIS AND DELETE THE PRECEEDING LINK TO 'style.css'
-
-	<link rel="stylesheet/less" type="text/css" href="styles.less" />
-	<script src="js/libs/less.min.js" type="text/javascript"></script>
-
-	-->
+	
 
 </head>
 
 <body>
-
+	<div id="top-decor"></div>
 	<div id="container">
-		<header>
-
+		<header class="full-width clearfix">
+			<div id="logo" class="two-thirds left">
+				<h1 class="hidden">Clever Web Design</h1>
+				<a href="#">
+				<img src="img/branding/logo.png" alt="Clever Web Design" title="Clever Web Design, Internet Marketing and Programming" />
+				</a>
+			</div>
+			<div class="one-third left last">
+				<a href="clients/">
+					<img src="img/design/login.png" alt="Client Login" />
+				</a>
+			</div>
 		</header>
+		<nav class="full-width clearfix">
+			<ul id="main-nav">
+				<li>
+					<a href="services/">Services</a>
+						<ul id="dropdown">
+							<li><a href="services/design.html">Web Design</a></li>
+							<li><a href="services/marketing.html">Internet Marketing</a></li>
+							<li><a href="services/hosting.html">Web Hosting</a></li>
+							<li><a href="services/development.html">App Development</a></li>
+							<li><a href="services/consulting.html">Consulting</a>
+						</ul>
+				</li>
+				<li><a href="portfolio/">Portfolio</a></li>
+				<li><a href="about/">About</a></li>
+				<li><a href="contact/">Contact</a></li>
+			</ul>
+		</nav>
 		<section id="main-container">
 
+			
 
 		</section>
 		<footer>
@@ -48,6 +69,8 @@
 	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.4.min.js">\x3C/script>')</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts.js"></script>
 
 	<!-- Put your Analytics Snippet here. Check out http://piwik.org for a great self-hosted analytics app -->
 
