@@ -60,3 +60,20 @@ opacity: 0.5
 }, "slow");
 });
 });
+
+// LATEST TWEET
+
+ $(function(){
+      $(".tweet").tweet({
+        join_text: "auto",
+        username: "ChooseClever",
+        avatar_size: 48,
+        count: 2,
+        auto_join_text_default: "We last Tweeted:",
+        auto_join_text_ed: "We",
+        auto_join_text_ing: "We were",
+        auto_join_text_reply: "We mentioned",
+        auto_join_text_url: "We linked to: ",
+        loading_text: "loading tweets..."
+      });
+    });

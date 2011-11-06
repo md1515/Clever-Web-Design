@@ -91,7 +91,7 @@ textarea {
 /*
  * Addresses outline displayed oddly in Chrome
  */
-a:focus {
+a:focus, a:visited {
   outline: thin dotted;
 }
 /*

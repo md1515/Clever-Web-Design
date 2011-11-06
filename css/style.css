@@ -14,6 +14,19 @@
   margin-left: auto;
   margin-right: auto;
 }
+.rotate {
+  -webkit-transform: rotate(-3deg) scale(1.1);
+  -moz-transform: rotate(-3deg) scale(1.1);
+  -ms-transform: rotate(-3deg) scale(1.1);
+  transform: rotate(-3deg) scale(1.1);
+}
+.transition {
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
 /* BACKGROUND GRADIENT MIXINS */
 .nav-btn-bg {
   background: #858785;
@@ -110,11 +123,19 @@ h6 {
   font-family: 'Cabin', Helvetica, Tahoma, sans-serif;
   font-weight: 600;
   color: #353635;
+  -o-text-shadow: 0 1px 1px #f9f5f4;
+  -moz-text-shadow: 0 1px 1px #f9f5f4;
+  -webkit-text-shadow: 0 1px 1px #f9f5f4;
+  text-shadow: 0 1px 1px #f9f5f4;
 }
 p {
   font-family: 'Cabin', Helvetica, Tahoma, sans-serif;
   font-size: 15px;
   line-height: 24px;
+  -o-text-shadow: 0 1px 1px #f9f5f4;
+  -moz-text-shadow: 0 1px 1px #f9f5f4;
+  -webkit-text-shadow: 0 1px 1px #f9f5f4;
+  text-shadow: 0 1px 1px #f9f5f4;
 }
 h6 {
   font-size: 18px;
@@ -127,12 +148,29 @@ h4 {
 }
 h3 {
   font-size: 30px;
+  line-height: 48px;
 }
 h2 {
   font-size: 34px;
+  line-height: 55px;
 }
 h1 {
   font-size: 36px;
+  line-height: 58px;
+}
+a, a:visited {
+  color: #aeb898;
+  -o-text-shadow: 0 1px 1px #353635;
+  -moz-text-shadow: 0 1px 1px #353635;
+  -webkit-text-shadow: 0 1px 1px #353635;
+  text-shadow: 0 1px 1px #353635;
+}
+a:focus, a:hover {
+  color: #353635;
+  -o-text-shadow: 0 1px 1px #353635;
+  -moz-text-shadow: 0 1px 1px #353635;
+  -webkit-text-shadow: 0 1px 1px #353635;
+  text-shadow: 0 1px 1px #353635;
 }
 /*:::: BUTTONS ::::*/
 /* For styling links as buttons */
@@ -439,27 +477,132 @@ header, nav {
 #main-nav li:hover ul li a:hover {
   text-decoration: none;
 }
+/*:::: FOOTER STYLING ::::*/
+footer {
+  display: block;
+  width: 100%;
+  background-image: url(../img/design/footerbg.png);
+  -o-box-shadow: 0 0 3px #353635;
+  -moz-box-shadow: 0 0 3px #353635;
+  -webkit-box-shadow: 0 0 3px #353635;
+  box-shadow: 0 0 3px #353635;
+  border-top: 1px solid #f9f5f4;
+}
+footer h5, footer h6 {
+  color: #f9f5f4;
+  -o-text-shadow: 0 1px 1px #353635;
+  -moz-text-shadow: 0 1px 1px #353635;
+  -webkit-text-shadow: 0 1px 1px #353635;
+  text-shadow: 0 1px 1px #353635;
+}
+footer p {
+  color: #f9f5f4;
+  font-size: 13px;
+  line-height: 21px;
+  -o-text-shadow: 0 1px 1px #353635;
+  -moz-text-shadow: 0 1px 1px #353635;
+  -webkit-text-shadow: 0 1px 1px #353635;
+  text-shadow: 0 1px 1px #353635;
+}
+.connect-icon img {
+  vertical-align: middle;
+}
+#connect {
+  list-style-type: none;
+}
+#connect a {
+  color: #f9f5f4;
+  text-decoration: none;
+  -o-text-shadow: 0 1px 1px #353635;
+  -moz-text-shadow: 0 1px 1px #353635;
+  -webkit-text-shadow: 0 1px 1px #353635;
+  text-shadow: 0 1px 1px #353635;
+  font-size: 13px;
+}
+#connect li {
+  margin-bottom: 10px;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+#connect li:hover {
+  padding: 5px;
+  border: 1px solid #f9f5f4;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: #353635;
+  -o-box-shadow: 0 0 3px #353635;
+  -moz-box-shadow: 0 0 3px #353635;
+  -webkit-box-shadow: 0 0 3px #353635;
+  box-shadow: 0 0 3px #353635;
+  -webkit-transform: rotate(-3deg) scale(1.1);
+  -moz-transform: rotate(-3deg) scale(1.1);
+  -ms-transform: rotate(-3deg) scale(1.1);
+  transform: rotate(-3deg) scale(1.1);
+}
 /*:::: HOMEPAGE STYLING ::::*/
 .clients h4 {
   line-height: 3px;
 }
+/*:::: LATEST TWEET STYLING ::::*/
+.tweet, .query {
+  font-family: 'Cabin', Helvetica, sans-serif;
+  font-size: 13px;
+  color: #f9f5f4;
+  -o-text-shadow: 0 1px 1px #353635;
+  -moz-text-shadow: 0 1px 1px #353635;
+  -webkit-text-shadow: 0 1px 1px #353635;
+  text-shadow: 0 1px 1px #353635;
+}
+.tweet .tweet_list, .query .tweet_list {
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  background-color: #353635;
+  -o-box-shadow: 0 0 3px #353635;
+  -moz-box-shadow: 0 0 3px #353635;
+  -webkit-box-shadow: 0 0 3px #353635;
+  box-shadow: 0 0 3px #353635;
+  border: 1px solid #f9f5f4;
+}
+.tweet .tweet_list .awesome,
+.tweet .tweet_list .epic,
+.query .tweet_list .awesome,
+.query .tweet_list .epic {
+  text-transform: uppercase;
+}
+.tweet .tweet_list li, .query .tweet_list li {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: .5em;
+}
+.tweet .tweet_list li a, .query .tweet_list li a {
+  color: #aeb898;
+  -o-text-shadow: 0 1px 1px #353635;
+  -moz-text-shadow: 0 1px 1px #353635;
+  -webkit-text-shadow: 0 1px 1px #353635;
+  text-shadow: 0 1px 1px #353635;
+}
+.tweet .tweet_list .tweet_even, .query .tweet_list .tweet_even {
+  background-color: #353635;
+}
+.tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar {
+  padding-right: .5em;
+  float: left;
+}
+.tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img {
+  vertical-align: middle;
+}
 /*:::: FANCYBOX STYLES ::::*/
-/*
- * FancyBox - jQuery Plugin
- * Simple and fancy lightbox alternative
- *
- * Examples and documentation at: http://fancybox.net
- * 
- * Copyright (c) 2008 - 2010 Janis Skarnelis
- * That said, it is hardly a one-person project. Many people have submitted bugs, code, and offered their advice freely. Their support is greatly appreciated.
- * 
- * Version: 1.3.4 (11/11/2010)
- * Requires: jQuery v1.3+
- *
- * Dual licensed under the MIT and GPL licenses:
- *   http://www.opensource.org/licenses/mit-license.php
- *   http://www.gnu.org/licenses/gpl.html
- */
 #fancybox-loading {
   position: fixed;
   top: 50%;
