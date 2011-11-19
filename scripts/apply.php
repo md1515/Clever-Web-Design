@@ -35,7 +35,7 @@ if(isset($_POST['submit'])) {
 
 	// Do not let mail be sent unless via _POST request
 	if($_SERVER['REQUEST_METHOD'] != "POST") {
-	   echo("Error. Spam activity detected. Please try elsewhere.");
+	   echo("Error. Spam activity detected. Please spam elsewhere.");
 	   exit;
 	}
 	else {
