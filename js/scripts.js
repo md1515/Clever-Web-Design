@@ -106,3 +106,9 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$(".tip").jTip();
 });
+
+// TABS
+
+$(document).ready(function(){
+	$("ul.tabs").jTabs({content: ".tabs_content"});
+});

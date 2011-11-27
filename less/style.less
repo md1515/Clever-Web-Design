@@ -109,6 +109,18 @@ background: linear-gradient(top, rgba(240,240,240,1) 0%,rgba(219,219,219,1) 100%
 /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-8 */
 }
 
+.blue-gradient-bg {
+	background: #a4d4f4; /* Old browsers */
+background: -moz-linear-gradient(top,  #a4d4f4 0%, #7ca0bb 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a4d4f4), color-stop(100%,#7ca0bb)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #a4d4f4 0%,#7ca0bb 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #a4d4f4 0%,#7ca0bb 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #a4d4f4 0%,#7ca0bb 100%); /* IE10+ */
+background: linear-gradient(top,  #a4d4f4 0%,#7ca0bb 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4d4f4', endColorstr='#7ca0bb',GradientType=0 ); /* IE6-9 */
+
+}
+
 /*:::: TYPOGRAPHY ::::*/
  /* Hint: replace this comment with styles for each h, 1-6. Sizes for each need specification */
 h1, h2, h3, h4, h5, h6 {
@@ -375,6 +387,13 @@ footer p {
 	.rotate;
 }
 
+#copyright {
+	text-align: center;
+}
+
+#copyright img {
+	vertical-align: middle;
+}
 
 
 
@@ -383,6 +402,53 @@ footer p {
 
 
 
+
+
+/*::: SERVICES PAGE ::::*/
+
+#service-intro {
+	.container-bg;
+	margin-top: 20px;
+	padding: 15px;
+	.border-radius(6px);
+	border: 1px solid @white;
+	.box-shadow(0, 0, 3px, @black);
+}
+
+#service-intro ul li {
+	list-style: none;
+	margin-bottom: 5px;
+	border: 1px solid @white;
+	.border-radius(6px);
+	.box-shadow(0, 0, 3px, @black);
+	padding: 10px;
+	.nav-btn-bg;
+}
+
+#service-intro ul li:hover {
+	.blue-gradient-bg;
+}
+
+#service-intro .tabs a {
+	color: @white;
+	.text-shadow(0, 1px, 1px, @black);
+	font-family: 'Open Sans', Helvetica, Arial;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+.tabs img {
+	vertical-align: middle;
+}
+
+.starting-from {
+	font-style: italic;
+	font-size: 18px;
+}
+
+.tabs_content h3 {
+	line-height: 12px;
+}
 
 
 /*:::: PORTFOLIO PAGE STYLES ::::*/
@@ -404,6 +470,13 @@ footer p {
 #screen-width p {
 	font-size: 13px;
 	line-height: 21px;
+	color: @white;
+	.text-shadow(0, 1px, 1px, @black);
+}
+
+.light-h {
+	color: @white;
+	.text-shadow(0, 1px, 1px, @black);
 }
 
 #compare img {
@@ -441,23 +514,16 @@ footer p {
 }
 
 .tip_window {
-	padding:5px; 
-	width:200px;
-	border:1px solid #fff;
-	background-color:#000; 
-	color:#fff; 
-	text-align:center;
-	-moz-border-radius-topleft: 0px;
-	-moz-border-radius-topright: 4px;
-	-moz-border-radius-bottomright: 4px;
-	-moz-border-radius-bottomleft: 4px;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 4px;
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px; 
-	-webkit-box-shadow: 1px 1px 3px #6e6d6e;
-	-moz-box-shadow: 1px 1px 3px #6e6d6e;
-	box-shadow: 1px 1px 3px #6e6d6e; 
+	padding: 5px;
+	width: 200px;
+	.border-radius(6px);
+	border: 1px solid @white;
+	background: @black;
+	color: @white;
+	.box-shadow(0, 0, 3px, @black);
+	font-size: 13px;
+	line-height: 20px;
+	.text-shadow(0, 1px, 1px, @blue);
 }
 
 
