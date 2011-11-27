@@ -34,6 +34,14 @@ $(document).ready(function() {
 		'overlayShow'	:	true
 	});
 	
+	$("a.group2").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	true
+	});
+	
 });
 
 // FADE IN - FADE OUT
@@ -77,3 +85,24 @@ opacity: 0.5
         loading_text: "loading tweets..."
       });
     });
+    
+// BEFORE-AFTER
+
+$('#compare').beforeAfter({
+		animateIntro : true,
+	        introDelay : 2000,
+	        introDuration : 500,
+	        showFullLinks : false
+		});
+		
+// jCOLLAPSE
+
+$(document).ready(function(){
+    		$(".collapse").jCollapse({effect: "fade"});                       
+		});
+		
+// TOOL TIPS
+
+$(document).ready(function(){
+	$(".tip").jTip();
+});

@@ -1,4 +1,5 @@
 .centered{margin-right:auto;margin-left:auto;}
+#screen-width{display:block;width:100%;margin-top:25px;padding-top:15px;padding-bottom:15px;}
 .full-width{display:block;width:1140px;padding-left:20px;padding-right:20px;margin-right:auto;margin-left:auto;}
 .one-half{display:block;width:540px;margin-right:20px;}
 .one-third{display:block;width:360px;margin-right:20px;}
