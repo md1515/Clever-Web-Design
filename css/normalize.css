@@ -4,7 +4,7 @@ audio:not([controls]){display:none;}
 [hidden]{display:none;}
 html{font-size:100%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 body{margin:0;}
-body,button,input,select,textarea{font-family:sans-serif;}
+button,input,select,textarea{font-family:'Cabin',sans-serif;}
 a:focus,a:visited{outline:thin dotted;}
 a:hover,a:active{outline:0;}
 abbr[title]{border-bottom:1px dotted;}
@@ -27,7 +27,7 @@ img{border:0;-ms-interpolation-mode:bicubic;padding-right:5px;}
 svg:not(:root){overflow:hidden;}
 figure{margin:0;}
 form{margin:0;}
-fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}
+fieldset{border:none;margin:0 2px;padding:0.35em 0.625em 0.75em;}
 legend{border:0;*margin-left:-7px;}
 button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}
 button,input{line-height:normal;}

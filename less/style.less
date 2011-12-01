@@ -118,7 +118,17 @@ background: -o-linear-gradient(top,  #a4d4f4 0%,#7ca0bb 100%); /* Opera 11.10+ *
 background: -ms-linear-gradient(top,  #a4d4f4 0%,#7ca0bb 100%); /* IE10+ */
 background: linear-gradient(top,  #a4d4f4 0%,#7ca0bb 100%); /* W3C */
 /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4d4f4', endColorstr='#7ca0bb',GradientType=0 ); /* IE6-9 */
+}
 
+.alt-btn-bg {
+	background: #fcfcfc; /* Old browsers */
+background: -moz-linear-gradient(top,  #fcfcfc 0%, #d1d1d1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#d1d1d1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fcfcfc 0%,#d1d1d1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fcfcfc 0%,#d1d1d1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fcfcfc 0%,#d1d1d1 100%); /* IE10+ */
+background: linear-gradient(top,  #fcfcfc 0%,#d1d1d1 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d1d1d1',GradientType=0 ); /* IE6-9 */
 }
 
 /*:::: TYPOGRAPHY ::::*/
@@ -199,10 +209,45 @@ a:focus, a:hover {
 	.text-shadow(0, 1px, 1px, @black);
 }
 
+.alt-button, .alt-button:visited {
+	.alt-btn-bg;
+	padding: 10px;
+	text-decoration: none;
+	color: @black;
+	.text-shadow(0, 1px, 1px, @white);
+	.border-radius(6px);
+	.box-shadow(0, 0, 5px, @black);
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	border: 1px solid @white;
+}
+
+.alt-button:hover {
+	.blue-gradient-bg;
+	color: @white;
+	.text-shadow(0, 1px, 1px, @black);
+	.box-shadow(0, 0, 3px, @black);
+}
+
 /*:::: FORMs ::::*/
 
+fieldset {
+	border: 1px solid @black;
+}
+
+label {
+	font-family: 'Cabin', sans-serif;
+	font-size: 18px;
+	.text-shadow(0, 1px, 1px, @white);
+}
+
 textarea {
-  
+	.border-radius(6px);
+	border: 1px solid @white;
+	.box-shadow(0, 0, 3px, @black);
+	.inset-shadow(inset, 0, 0, 5px, @black);
+	padding: 5px;
+	.alt-btn-bg;
 }
 
 input[type=text], input[type=email], input[type=password] {
@@ -266,6 +311,14 @@ header, nav {
 	.nav-btn-hvr;
 	color: @black;
 	.text-shadow(0, 1px, 1px, @white);
+}
+
+#page-intro {
+	.container-bg;
+	margin-top: 20px;
+	border: 1px solid @white;
+	.border-radius(6px);
+	.box-shadow(0, 0, 3px, @black);
 }
 
 /* Main navigation */
@@ -411,7 +464,68 @@ footer p {
 
 /*:::: SPECIAL CLASSES ::::*/
 
+#short-message {
+	padding-top: 35px;
+}
 
+#process {
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	color: @black;
+	font-size: 14px;
+	list-style: none;
+	.text-shadow(0, 1px, 1px, @white);
+	margin-bottom: 20px;
+}
+
+#process li {
+	margin-bottom: 10px;
+}
+
+.step {
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border: 1px solid @white;
+	.box-shadow(0, 0, 3px, @black);
+	.border-radius(15px);
+	.blue-gradient-bg;
+	color: @black;
+	display: block;
+	float: left;
+	
+}
+
+.frame {
+	border: 5px solid @white;
+	.box-shadow(0, 0, 5px, @black);
+	padding: 0;
+}
+.img-spc {
+	margin-right: 10px;
+}
+
+.code-img {
+	border: 5px solid @white;
+	.box-shadow(0, 0, 5px, @black);
+	margin-bottom: 20px;
+}
+
+#screen-width p a, #screen-width p a:visited {
+	color: @white;
+	background: @black;
+	.text-shadow(0, 1px, 1px, @gray);
+	padding: 2px;
+}
+
+#screen-width p a:hover {
+	text-decoration: none;
+}
+
+.mission {
+	font-style: italic;
+	font-size: 17px;
+}
 
 /*::: SERVICES PAGE ::::*/
 
@@ -468,6 +582,62 @@ footer p {
 	padding-left: 20px;
 }
 
+#service-table {
+	margin-top: 20px;
+	border: 1px solid @white;
+	.box-shadow(0, 0, 5px, @black);
+	.border-radius(6px);
+	margin-bottom: 20px;
+}
+
+#service-table h6 {
+	line-height: 12px;
+}
+
+.price-heading {
+	background-image: url(../img/design/tbl-hbg.png);
+}
+
+#service-table tr.price-heading td {
+	padding: 1px;
+	height: 70px;
+}
+
+#service-table tr {
+	width: 100%;
+}
+
+#service-table tr td {
+	width: 180px;
+	text-align: center;
+	vertical-align: top;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 50px;
+}
+
+.service-cost {
+	vertical-align: middle;
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 14px;
+	color: @black;
+	.text-shadow(0, 1px, 1px, @white);
+}
+
+.row-one {
+	background-image: url(../img/design/row1.png);
+}
+
+.row-two {
+	background-image: url(../img/design/row2.png);
+}
+
+#screen-width h5, #screen-width h4, #screen-width h3 {
+	color: @white;
+	.text-shadow(0, 1px, 1px, @black);
+}
+
 
 /*:::: PORTFOLIO PAGE STYLES ::::*/
 
@@ -490,6 +660,7 @@ footer p {
 	line-height: 21px;
 	color: @white;
 	.text-shadow(0, 1px, 1px, @black);
+	margin-bottom: 20px;
 }
 
 .light-h {
